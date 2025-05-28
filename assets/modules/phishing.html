@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Phishing Awareness</title>
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Phishing Awareness</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="passwords.html">Passwords</a>
+      <a href="malware.html">Malware</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>What is Phishing?</h2>
+      <p>
+        Phishing is a cyber attack that uses disguised emails or websites to trick
+        people into revealing personal information.
+      </p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/1qA5thglCyw" title="Phishing Awareness Video" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section>
+      <h2>Quick Quiz: Spot the Phishing Attempt</h2>
+      <div id="quiz-container">
+        <div class="quiz-question">
+          <p>1. An email asks you to click a link to reset your password. What should you do?</p>
+          <div class="quiz-options">
+            <label><input type="radio" name="q1" value="wrong" /> Click the link immediately</label>
+            <label><input type="radio" name="q1" value="correct" /> Verify the sender before clicking</label>
+            <label><input type="radio" name="q1" value="wrong" /> Ignore all emails</label>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <p>2. A suspicious email has a strange URL link. What is a safe action?</p>
+          <div class="quiz-options">
+            <label><input type="radio" name="q2" value="correct" /> Hover over link to check URL</label>
+            <label><input type="radio" name="q2" value="wrong" /> Forward to friends</label>
+            <label><input type="radio" name="q2" value="wrong" /> Reply with your password</label>
+          </div>
+        </div>
+
+        <button onclick="checkPhishingQuiz()">Submit Answers</button>
+        <p id="quiz-result" class="result"></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Cheat Sheet</h2>
+      <p>
+        Download the <a href="../cheatsheets/phishing-cheatsheet.pdf" target="_blank">Phishing Cheat Sheet (PDF)</a> to keep handy.
+      </p>
+    </section>
+  </main>
+  <script src="../phishing-quiz.js"></script>
+</body>
+</html>
